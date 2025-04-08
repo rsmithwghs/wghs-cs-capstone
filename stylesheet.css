@@ -1,3 +1,7 @@
 body {
-    background: url("/resources/bg.jpg");
+    background: url("/resources/blue.gif");
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
 }
