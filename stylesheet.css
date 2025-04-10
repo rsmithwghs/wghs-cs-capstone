@@ -1,0 +1,22 @@
+body {
+    /* background: url("/resources/br.bmp"); */
+    background: black;
+    font-family: "Baskervville", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    text-align: center;
+}
+
+a:link {
+    color : white;
+}
+a:visited {
+    color : red;
+}
+
+h2 {
+    font-family: "Pinyon Script", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
