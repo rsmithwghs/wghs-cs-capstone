@@ -1,6 +1,6 @@
 body {
-    /* background: url("/resources/br.bmp"); */
-    background: black;
+    background: url("/resources/backg.gif");
+    
     font-family: "Baskervville", serif;
     font-weight: 400;
     font-style: normal;
