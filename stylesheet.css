@@ -22,8 +22,25 @@ h2 {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 25px;
     width: 100%;
+}
+
+#albumContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+.fetchedAlbum {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+}
+.fetchedAlbum img {
+    max-width: 100%;
+    height: auto;
 }

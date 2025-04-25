@@ -13,11 +13,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-<h1>UNDER CONSTRUCTION</h1>
-<p>Album fetcher is originating from separate work. Will include it when it is done.</p>
+<h1>Album Fetcher</h1>
+<h2>NOTE: Any album you fetch, its info will be lost when this page is refreshed or closed!</h2>
+<h3>*Listener stats are collected from Last.FM.</h3>
+<div>
+    <label for="artistName">Artist name:</label>
+    <input type="text" id="artistName">
+    <label for="albumName">Album name:</label>
+    <input type="text" id="albumName">
+    <button onclick="getAlbum()">Get Album Information</button>
+</div>
+
+<div id="albumContainer">
+    <!-- Add album information -->
+
+</div>
+<h1></h1>
 <footer>
+    <p></p>
     <p>now i'm nothing</p>
-    <a href="/index.html">return to sanity</a>
+    <a href="../index.html">return to sanity</a>
 </footer>
+<script src="album.js"></script>
 </body>
 </html>
