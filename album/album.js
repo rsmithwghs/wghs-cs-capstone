@@ -7,11 +7,16 @@ let httpsArgs = {
 }
 
 var apiKey = "Get your own darn key!";
-function getAlbum(){
+
+/**
+ * Fetches Album name, Artist, track count, and Last.FM listener count via Last.FM APIs.
+ * @param {string} key - API key for Last.FM; must be obtained by user
+ */
+function getAlbum(key){
     // alert("Button call to function successful"); for testing button, no longer needed.
     let artistName = document.getElementById("artistName").value;
     let albumName = document.getElementById("albumName").value;
-    fetch("http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=" + apiKey +"&artist="+artistName + "&album=" + albumName +"&format=json", httpsArgs)
+    fetch("http://ws.audioscrobbler.com/2.0/?method=album.getinfo&api_key=" + key +"&artist="+artistName + "&album=" + albumName +"&format=json", httpsArgs)
         .then(response => response.json())
         .then(data => {
 
