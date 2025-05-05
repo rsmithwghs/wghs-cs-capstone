@@ -27,12 +27,7 @@ h2 {
     color: red;
 }
 
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 25px;
-    width: 100%;
-}
+
 
 #albumContainer {
     display: flex;
