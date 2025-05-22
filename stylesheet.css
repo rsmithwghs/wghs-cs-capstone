@@ -1,3 +1,4 @@
+/* For all the pages. */
 body {
     background: url("/resources/backg.gif");
     
@@ -27,7 +28,7 @@ h2 {
     color: red;
 }
 
-
+/* These are for the Album fetcher. */
 
 #albumContainer {
     display: flex;

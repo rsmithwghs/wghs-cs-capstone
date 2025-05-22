@@ -6,7 +6,7 @@ let httpsArgs = {
     }
 }
 
-let apiKey = "Get your own darn key!";
+let apiKey = "No.";
 
 /**
  * Fetches Album name, Artist, track count, and Last.FM listener count via Last.FM APIs.
@@ -36,6 +36,9 @@ function getAlbum(){
             art.src = data.album.image[2]["#text"]; // Set image source to the LastFM URL for the artwork.
 
             const trackCount = data.album.tracks.track.length; // Get track count for the album.
+            // Get the first tag associated with the album.
+            const tag = document.createElement("p");
+            tag.textContent = data.album.tags.tag[0]["name"];
 
             // console.log(trackCount); no longer needed.
             const info = document.createElement("p");
@@ -44,6 +47,7 @@ function getAlbum(){
             album.appendChild(art);
             album.appendChild(aName);
             album.appendChild(artist);
+            album.appendChild(tag);
             album.appendChild(info);
             container.appendChild(album); // Wrap it all up and send it to the container.
 
